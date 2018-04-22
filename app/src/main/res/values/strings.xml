@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InstantGram</string>
+
+    <string name="please_wait">Please wait…</string>
+    <string name="oops_something_went_wrong">Oops something went wrong</string>
+    <string name="no_data">No data</string>
 </resources>

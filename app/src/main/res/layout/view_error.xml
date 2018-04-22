@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@id/errorViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorAccent"
+            android:drawableTop="@drawable/error_view_cloud"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/oops_something_went_wrong"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+    </FrameLayout>
+
+</merge>
