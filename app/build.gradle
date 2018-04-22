@@ -35,6 +35,8 @@ android {
 
 }
 
+ext.supportVersion = '27.1.1'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
@@ -42,33 +44,37 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:design:$supportVersion"
+    implementation "com.android.support:design:$supportVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    compile 'com.android.support:multidex:1.0.1'
+    implementation 'com.android.support:multidex:1.0.1'
 
-    compile 'com.jakewharton.timber:timber:4.6.0'
+    implementation 'com.jakewharton.timber:timber:4.6.0'
 
-    compile 'com.facebook.stetho:stetho:1.5.0'
-    compile 'com.uphyca:stetho_realm:2.1.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.uphyca:stetho_realm:2.1.0'
 
-    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0'
 
-    compile 'io.reactivex.rxjava2:rxjava:2.1.12'
-    compile group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.0.2'
 
-    compile 'com.arello-mobile:moxy:1.5.3'
-    compile 'com.arello-mobile:moxy-android:1.5.3'
-    compile 'com.arello-mobile:moxy-app-compat:1.5.3'
+    implementation 'com.arello-mobile:moxy:1.5.3'
+    implementation 'com.arello-mobile:moxy-android:1.5.3'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.3'
     kapt 'com.arello-mobile:moxy-compiler:1.5.3'
 
-    compile 'com.google.dagger:dagger:2.12'
+    implementation 'com.google.dagger:dagger:2.12'
     kapt 'com.google.dagger:dagger-compiler:2.12'
 
-    compile 'frankiesardo:icepick:3.2.0'
+    implementation 'frankiesardo:icepick:3.2.0'
     kapt 'frankiesardo:icepick-processor:3.2.0'
 
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
     
-    compile 'joda-time:joda-time:2.9.9'
+    implementation 'joda-time:joda-time:2.9.9'
+
+    implementation 'me.relex:circleindicator:1.2.2@aar'
 }
