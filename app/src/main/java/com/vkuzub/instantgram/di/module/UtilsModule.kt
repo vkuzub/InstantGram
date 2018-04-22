@@ -20,7 +20,7 @@ class UtilsModule {
 
     @Singleton
     @Provides
-    fun provideFakeApiHelper(): FakeApiHelper = FakeApiHelperImpl()
+    fun provideFakeApiHelper(context: Context): FakeApiHelper = FakeApiHelperImpl(context)
 
     @Singleton
     @Provides

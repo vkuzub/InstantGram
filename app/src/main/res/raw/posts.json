@@ -1,0 +1,36 @@
+[
+  {
+    "uuid": "a2c5e5db-335b-485b-9dcf-e92af0748ec2",
+    "owner": {
+      "username": "Foo",
+      "account": "account_foo",
+      "avatar": "https://images.emojiterra.com/twitter/512px/1f914.png"
+    },
+    "images": [
+      "http://www.theredbadgeproject.com/responsive/wp-content/uploads/2013/02/Wallpaper-13.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4rpRcEulW5UBZa2YSsJYUNdNWKxyHSOreMZH5CtOhFTDfFDv"
+    ],
+    "post_description": "Hello world!",
+    "liked_by_users": [
+      "Foo",
+      "Bar"
+    ],
+    "created_at": 2
+  },
+  {
+    "uuid": "fd23b594-9daa-427e-b06a-6dec31d9d393",
+    "owner": {
+      "username": "Bar",
+      "account": "account_bar",
+      "avatar": "https://emojipedia-us.s3.amazonaws.com/thumbs/160/google/119/thinking-face_1f914.png"
+    },
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDItZ1xb4Z9ZgRxXV5vf6yIMWaBYweeTcNhaRSe7b3IDecMS37"
+    ],
+    "liked_by_users": [
+      "Foo"
+    ],
+    "post_description": "Awesome",
+    "created_at": 10
+  }
+]
