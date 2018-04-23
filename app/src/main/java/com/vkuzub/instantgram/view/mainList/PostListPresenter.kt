@@ -35,10 +35,14 @@ class PostListPresenter : BasePresenter<PostListView>() {
     }
 
     private fun onLoadDataSuccess(list: List<Post>) {
-        viewState.fillList(list)
-        dataManager.savePosts(list)
+        if (list.isNotEmpty()) {
+            viewState.fillList(list)
+            dataManager.savePosts(list)
 
-        viewState.showContent()
+            viewState.showContent()
+        } else {
+            viewState.showEmpty()
+        }
     }
 
     private fun onLoadDataFail(throwable: Throwable) {
